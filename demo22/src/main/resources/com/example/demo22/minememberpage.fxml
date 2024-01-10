@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo22.controller">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="800.0">
+         <children>
+            <AnchorPane fx:id="profile" layoutX="-37.0" prefHeight="700.0" prefWidth="253.0" style="-fx-background-color: linear-gradient(#450905 0%,#9e1b0e  25%, #c72107 75%, #f03106 100%); -fx-background-radius: 30px;">
+               <children>
+                  <Button fx:id="threebutton" layoutX="97.0" layoutY="242.0" mnemonicParsing="false" onAction="#handlethreebutton" prefHeight="54.0" prefWidth="98.0" style="-fx-background-color: #fff4ed; -fx-background-radius: 30px;" text="Three variables" textFill="#ff4405" />
+                  <Button fx:id="fourbutton" layoutX="96.0" layoutY="356.0" mnemonicParsing="false" onAction="#handlefourbutton" prefHeight="54.0" prefWidth="98.0" style="-fx-background-color: #fff4ed; -fx-background-radius: 30px;" text="Four variables" textFill="#ff4405" />
+                  <Button fx:id="fivebutton" layoutX="97.0" layoutY="458.0" mnemonicParsing="false" onAction="#handlefivebutton" prefHeight="54.0" prefWidth="98.0" style="-fx-background-color: #fff4ed; -fx-background-radius: 30px;" text="Five variables" textFill="#ff4405" />
+                  <Label layoutX="64.0" layoutY="85.0" text="Welcome" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="five" layoutX="218.0" prefHeight="700.0" prefWidth="582.0">
+               <children>
+                  <Button layoutX="490.0" layoutY="575.0" mnemonicParsing="false" onAction="#print" text="Show minterms" />
+                  <TextField fx:id="out5" layoutX="136.0" layoutY="542.0" prefHeight="91.0" prefWidth="347.0" style="-fx-background-color: #fec973;" />
+                  <Button fx:id="makebutton5" layoutX="490.0" layoutY="396.0" mnemonicParsing="false" onAction="#get_id" style="&quot; text=&quot;A = 0&quot; xmlns=&quot;http: //javafx.com/javafx/21&quot;; xmlns: fx&quot;http://javafx.com/fxml/1&quot; /gt;" text="Make group" />
+                  <TextField fx:id="out52" layoutX="136.0" layoutY="363.0" prefHeight="91.0" prefWidth="347.0" style="-fx-background-color: #fec973;" />
+                  <GridPane fx:id="fivegrid1" gridLinesVisible="true" layoutX="14.0" layoutY="51.0" prefHeight="232.0" prefWidth="274.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="abcde" prefHeight="65.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="abcdE" prefHeight="65.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="abcDE" prefHeight="66.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <TextField fx:id="abcDe" prefHeight="58.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextField fx:id="abCde" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="abCdE" prefHeight="66.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="abCDE" prefHeight="77.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextField fx:id="abCDe" prefHeight="65.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label prefHeight="49.0" prefWidth="106.0" style="-fx-alignment: center; -fx-background-color: orange;" text="01" GridPane.rowIndex="2" />
+                        <Label prefHeight="49.0" prefWidth="132.0" style="-fx-alignment: center; -fx-background-color: orange;" text="00" GridPane.rowIndex="1" />
+                        <Label prefHeight="49.0" prefWidth="119.0" style="-fx-alignment: center; -fx-background-color: orange;" text="B,C/D,E" />
+                        <Label prefHeight="49.0" prefWidth="108.0" style="-fx-alignment: center; -fx-background-color: orange;" text="00" GridPane.columnIndex="1" />
+                        <Label prefHeight="49.0" prefWidth="115.0" style="-fx-alignment: center; -fx-background-color: orange;" text="01" GridPane.columnIndex="2" />
+                        <Label prefHeight="49.0" prefWidth="110.0" style="-fx-alignment: center; -fx-background-color: orange;" text="11" GridPane.columnIndex="3" />
+                        <Label prefHeight="49.0" prefWidth="107.0" style="-fx-alignment: center; -fx-background-color: orange;" text="10" GridPane.columnIndex="4" />
+                        <Label prefHeight="49.0" prefWidth="102.0" style="-fx-alignment: center; -fx-background-color: orange;" text="11" GridPane.rowIndex="3" />
+                        <Label prefHeight="49.0" prefWidth="111.0" style="-fx-alignment: center; -fx-background-color: orange;" text="10" GridPane.rowIndex="4" />
+                        <TextField fx:id="aBCde" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="aBCdE" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="aBCDE" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <TextField fx:id="aBCDe" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <TextField fx:id="aBcde" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="aBcdE" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="aBcDE" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <TextField fx:id="aBcDe" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="fivegrid2" gridLinesVisible="true" layoutX="291.0" layoutY="51.0" prefHeight="232.0" prefWidth="280.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="Abcde" prefHeight="65.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="AbcdE" prefHeight="65.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="AbcDE" prefHeight="66.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <TextField fx:id="AbcDe" prefHeight="58.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextField fx:id="AbCde" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="AbCdE" prefHeight="66.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="AbCDE" prefHeight="77.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextField fx:id="AbCDe" prefHeight="65.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label prefHeight="49.0" prefWidth="106.0" style="-fx-alignment: center; -fx-background-color: orange;" text="01" GridPane.rowIndex="2" />
+                        <Label prefHeight="49.0" prefWidth="132.0" style="-fx-alignment: center; -fx-background-color: orange;" text="00" GridPane.rowIndex="1" />
+                        <Label prefHeight="49.0" prefWidth="119.0" style="-fx-alignment: center; -fx-background-color: orange;" text="B,C/D,E" />
+                        <Label prefHeight="49.0" prefWidth="108.0" style="-fx-alignment: center; -fx-background-color: orange;" text="00" GridPane.columnIndex="1" />
+                        <Label prefHeight="49.0" prefWidth="115.0" style="-fx-alignment: center; -fx-background-color: orange;" text="01" GridPane.columnIndex="2" />
+                        <Label prefHeight="49.0" prefWidth="110.0" style="-fx-alignment: center; -fx-background-color: orange;" text="11" GridPane.columnIndex="3" />
+                        <Label prefHeight="49.0" prefWidth="107.0" style="-fx-alignment: center; -fx-background-color: orange;" text="10" GridPane.columnIndex="4" />
+                        <Label prefHeight="49.0" prefWidth="102.0" style="-fx-alignment: center; -fx-background-color: orange;" text="11" GridPane.rowIndex="3" />
+                        <Label prefHeight="49.0" prefWidth="111.0" style="-fx-alignment: center; -fx-background-color: orange;" text="10" GridPane.rowIndex="4" />
+                        <TextField fx:id="ABCde" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="ABCdE" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="ABCDE" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <TextField fx:id="ABCDe" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <TextField fx:id="ABcde" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="ABcdE" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="ABcDE" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <TextField fx:id="ABcDe" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <Label layoutX="115.0" layoutY="283.0" prefHeight="32.0" prefWidth="72.0" style="-fx-alignment: center; -fx-background-radius: 30px; -fx-background-color: orange;" text="A = 0" />
+                  <Label layoutX="395.0" layoutY="283.0" prefHeight="32.0" prefWidth="72.0" style="-fx-alignment: center; -fx-background-radius: 30px; -fx-background-color: orange;" text="A = 1" />
+                  <Label layoutX="258.0" layoutY="339.0" text="Used mintems: ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="513.0" text="Show grouped:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="three" layoutX="219.0" prefHeight="700.0" prefWidth="571.0">
+               <children>
+                  <GridPane fx:id="threegrid" gridLinesVisible="true" layoutX="109.0" layoutY="62.0" prefHeight="212.0" prefWidth="358.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="abc" prefHeight="88.0" prefWidth="72.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="abC" prefHeight="86.0" prefWidth="72.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="aBC" prefHeight="86.0" prefWidth="72.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <TextField fx:id="aBc" prefHeight="102.0" prefWidth="72.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextField fx:id="Abc" prefHeight="86.0" prefWidth="72.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="AbC" prefHeight="93.0" prefWidth="72.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="ABC" prefHeight="94.0" prefWidth="72.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextField fx:id="ABc" prefHeight="102.0" prefWidth="72.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label prefHeight="79.0" prefWidth="72.0" style="-fx-alignment: center; -fx-background-color: orange;" text="1" GridPane.rowIndex="2" />
+                        <Label prefHeight="91.0" prefWidth="72.0" style="-fx-alignment: center; -fx-background-color: orange;" text="0" GridPane.rowIndex="1" />
+                        <Label prefHeight="91.0" prefWidth="72.0" style="-fx-alignment: center; -fx-background-color: orange;" text="A / B , C" />
+                        <Label prefHeight="70.0" prefWidth="89.0" style="-fx-alignment: center; -fx-background-color: orange;" text="00" GridPane.columnIndex="1" />
+                        <Label prefHeight="89.0" prefWidth="72.0" style="-fx-alignment: center; -fx-background-color: orange;" text="01" GridPane.columnIndex="2" />
+                        <Label prefHeight="72.0" prefWidth="72.0" style="-fx-alignment: center; -fx-background-color: orange;" text="11" GridPane.columnIndex="3" />
+                        <Label prefHeight="86.0" prefWidth="72.0" style="-fx-alignment: center; -fx-background-color: orange;" text="10" GridPane.columnIndex="4" />
+                     </children>
+                  </GridPane>
+                  <Button layoutX="472.0" layoutY="592.0" mnemonicParsing="false" onAction="#print" text="Show minterms" />
+                  <TextField fx:id="out3" layoutX="119.0" layoutY="559.0" prefHeight="91.0" prefWidth="347.0" style="-fx-background-color: #fec973;" />
+                  <Button fx:id="makebutton3" layoutX="490.0" layoutY="421.0" mnemonicParsing="false" onAction="#get_id" text="Make group" />
+                  <TextField fx:id="out32" layoutX="119.0" layoutY="388.0" prefHeight="91.0" prefWidth="347.0" style="-fx-background-color: #fec973;" />
+                  <Label layoutX="241.0" layoutY="357.0" text="Used mintems: ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="242.0" layoutY="530.0" text="Show grouped:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="four" layoutX="218.0" layoutY="-1.0" prefHeight="700.0" prefWidth="582.0">
+               <children>
+
+                  <GridPane fx:id="fourgrid" gridLinesVisible="true" layoutX="84.0" layoutY="65.0" prefHeight="241.0" prefWidth="452.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="abcd" prefHeight="65.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="abcD" prefHeight="65.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="abCD" prefHeight="66.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <TextField fx:id="abCd" prefHeight="58.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextField fx:id="aBcd" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="aBcD" prefHeight="66.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="aBCD" prefHeight="77.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextField fx:id="aBCd" prefHeight="65.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label prefHeight="49.0" prefWidth="106.0" style="-fx-alignment: center; -fx-background-color: orange;" text="01" GridPane.rowIndex="2" />
+                        <Label prefHeight="49.0" prefWidth="132.0" style="-fx-alignment: center; -fx-background-color: orange;" text="00" GridPane.rowIndex="1" />
+                        <Label prefHeight="49.0" prefWidth="119.0" style="-fx-alignment: center; -fx-background-color: orange;" text="A , B / C , D" />
+                        <Label prefHeight="49.0" prefWidth="108.0" style="-fx-alignment: center; -fx-background-color: orange;" text="00" GridPane.columnIndex="1" />
+                        <Label prefHeight="49.0" prefWidth="115.0" style="-fx-alignment: center; -fx-background-color: orange;" text="01" GridPane.columnIndex="2" />
+                        <Label prefHeight="49.0" prefWidth="110.0" style="-fx-alignment: center; -fx-background-color: orange;" text="11" GridPane.columnIndex="3" />
+                        <Label prefHeight="49.0" prefWidth="107.0" style="-fx-alignment: center; -fx-background-color: orange;" text="10" GridPane.columnIndex="4" />
+                        <Label prefHeight="49.0" prefWidth="102.0" style="-fx-alignment: center; -fx-background-color: orange;" text="11" GridPane.rowIndex="3" />
+                        <Label prefHeight="49.0" prefWidth="111.0" style="-fx-alignment: center; -fx-background-color: orange;" text="10" GridPane.rowIndex="4" />
+                        <TextField fx:id="ABcd" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="ABcD" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="ABCD" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <TextField fx:id="ABCd" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <TextField fx:id="Abcd" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="AbcD" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="AbCD" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <TextField fx:id="AbCd" prefHeight="59.0" prefWidth="54.0" style="-fx-alignment: center;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <Button layoutX="487.0" layoutY="576.0" mnemonicParsing="false" onAction="#print" text="Show minterms" />
+                  <Button fx:id="makebutton4" layoutX="496.0" layoutY="398.0" mnemonicParsing="false" onAction="#get_id" text="Make group" />
+                  <TextField fx:id="out42" layoutX="136.0" layoutY="365.0" prefHeight="91.0" prefWidth="347.0" style="-fx-background-color: #fec973;" />
+                  <TextField fx:id="out4" layoutX="137.0" layoutY="543.0" prefHeight="91.0" prefWidth="347.0" style="-fx-background-color: #fec973;" />
+                  <Label layoutX="258.0" layoutY="339.0" text="Used mintems: ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="260.0" layoutY="513.0" text="Show grouped:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
